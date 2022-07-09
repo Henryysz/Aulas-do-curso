@@ -1,0 +1,65 @@
+#notas = 0
+#
+#for indice in range (1, 5):
+# nota = float(input(f'Nota {indice}: '))
+# notas += nota
+#media = notas / 4
+#print(f'Média: {media:.2f}')
+
+#notas = 0
+#contador = 1
+#while contador < 5:
+#    nota = float(input(f'Digite a nota {contador}: '))
+#    notas += nota
+#    contador += 1
+#media = notas / 4
+#print('média: ', media)
+
+#from datetime import datetime as dt
+#nome = input('Digite seu nome: ')
+#ano_nascimento = int(input('Digite seu ano de nascimento: '))
+#ano_atual = dt.today().year
+#
+#idade = ano_atual - ano_nascimento
+#
+#if idade >= 18:
+#    print(f'{nome}, sua entrada foi permitida.')
+#else:
+#    print(f'{nome}, sua entrada não foi permitida.')
+
+
+
+#from datetime import datetime as dt
+#nome = input('Digite seu nome: ')
+#ano_nascimento = int(input('Digite seu ano de nascimento: '))
+#ano_atual = dt.today().year
+#
+#idade = ano_atual - ano_nascimento
+#entrada_permitida = idade>= 18
+#if entrada_permitida:
+#    print(f'{nome}, sua entrada foi permitida.')
+#else:
+#    print(f'{nome}, sua entrada não foi permitida.')
+
+#num1 = int(input('1º número: '))
+#num2 = int(input('2º número: '))
+#
+#igual = num1 == num2
+#diferente = num1 != num2
+#maior = num1 > num2
+#menor = num1 < num2
+#if igual:
+#    print('São iguais.')
+#if diferente and maior:
+#    print(f'São diferentes.{num1} é o maior, e {num2} é o menor.')
+#if diferente and menor:
+#    print(f'São diferentes.{num2} é o maior, e {num1} é o menor.')
+
+#num = 0
+#while num <= 50:
+#    print(num, end= ', ')
+#    num +=5
+#
+#for contador in range(0, 51, 5):
+#    print(contador, end='')
+
