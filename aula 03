@@ -1,0 +1,60 @@
+#AULA (16/07)
+--Atividade 01----------------------------------------------------
+
+for numero in range (0, 11, 1):
+    if numero % 2 != 0:
+        print(numero, end=', ')
+    else:
+        continue
+else:
+    print('Fim!')
+
+-** SE QUISER QUE A LISTA DIGA QUE CADA NÚMERO É IMPAR**-----------
+for numero in range (0, 11, 1):
+    if numero % 2 == 1:
+        print(numero, end=', ')
+    else:
+        continue
+    print('Número ímpar!')
+
+--Atividade 02----------------------------------------------------
+
+-PARA TABUADA DE 7------------------------------------------------
+for numero in range (0, 11, 1):
+    multp = numero * 7
+    print(multp, end = ',')
+
+-PARA TABUADA DE 7 (Só que bonita)--------------------------------
+for numero in range(1, 11):
+    print(f'7 x {numero} = {7 * numero}')
+
+-PARA TABUADA (QUALQUER NÚMERO QUE O USUÁRIO PEDIR)---------------
+num = int(input('Número: '))
+
+for numero in range(1, 11):
+    print(f'{num} x {numero} = {num * numero}')
+
+-PARA TABUADA QUANDO O MULTIPLICADOR TIVER 2 CASAS OU MAIS--------
+num = int(input('Número: '))
+
+for numero in range(1, 11):
+    print(f'{num} x {numero:0>2} = {num * numero:0>2}')
+    
+-A TABELA DE TODOS OS NUMEROS (Bem bonita agora)------------------
+for numero in range (1, 11, 1):
+    for multp in range(1, 11, 1):
+     print(f'{numero} x {multp:0>2} = {numero * multp:0>2}')
+    print('-' * 13)
+
+-PARA SABER SE O NUMERO É PRIMO-----------------------------------
+inicio = int(input('Início: '))
+fim = int(input('Fim: '))
+
+for numero in range(inicio, fim, +1):
+    if numero == 1:
+        continue
+    for num in range(2, numero):
+        if numero % num == 0:
+            break
+    else:
+        print(numero, end= ' ')
