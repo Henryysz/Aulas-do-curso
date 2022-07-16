@@ -9,7 +9,7 @@ for numero in range (0, 11, 1):
 else:
     print('Fim!')
 
--** SE QUISER QUE A LISTA DIGA QUE CADA NÚMERO É IMPAR**-----------
+-** SE QUISER QUE A LISTA DIGA QUE CADA NÚMERO É IMPAR**----------
 for numero in range (0, 11, 1):
     if numero % 2 == 1:
         print(numero, end=', ')
@@ -58,3 +58,23 @@ for numero in range(inicio, fim, +1):
             break
     else:
         print(numero, end= ' ')
+       
+-COMO MULTIPLICAR UM NUMERO PELOS SEUS ANTERIORES-----------------
+numero = int(input('Digite um número: '))
+fatorial = 1
+for num in range(numero, 0, -1):
+    fatorial = fatorial * num
+print(fatorial)
+
+-PARA MOSTRAR OS NUMEROS MULTIPLICADOS----------------------------
+numero = int(input('Digite um número: '))
+fatorial = 1
+for num in range(numero, 0, -1):
+    fatorial = fatorial * num
+    if num == 1:
+        print(f'{num}', end =' ')
+    else:
+        print(f'{num} x', end= ' ')
+else:    
+ print(f'= {fatorial}')
+
